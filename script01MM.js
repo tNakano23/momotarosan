@@ -1,7 +1,7 @@
 
 $(function(){
     $(window).scroll(function(){
-        $('.eff-fadein').each(function(){
+        $('.fadein').each(function(){
             let elemPos      = $(this).offset().top;
             let windowHeight = $(window).height(); 
             if (scrollY > elemPos - windowHeight + 200){
@@ -10,9 +10,6 @@ $(function(){
             // else{
             //     $(this).removeClass('eff-scrollin');
             // }
-            if (scrollY > elemPos - windowHeight + 1000){
-                $(this).removeClass('sticky');
-            }
         });
     });
 });
