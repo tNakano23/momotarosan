@@ -16,8 +16,21 @@ $(function(){
 
 
 $(function() {
-    $('img-txt').hover(function() {
-        $(this).addClass('img-txt-hover');
+    $('.inu-img').hover(function() {
+        $(this).toggleClass('hidden').toggleClass('img-txt');
+        $('.descript-for-inu').toggleClass('hidden').toggleClass('img-txt');
+    });
+});
+$(function() {
+    $('.saru-img').hover(function() {
+        $(this).toggleClass('hidden').toggleClass('img-txt');
+        $('.descript-for-saru').toggleClass('hidden').toggleClass('img-txt');
+    });
+});
+$(function() {
+    $('.kiji-img').hover(function() {
+        $(this).toggleClass('hidden').toggleClass('img-txt');
+        $('.descript-for-kiji').toggleClass('hidden').toggleClass('img-txt');
     });
 });
 
